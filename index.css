@@ -1,3 +1,17 @@
 body {
   margin: 5rem;
 }
+
+/* span {
+  background-color: yellow;
+} */
+
+.span-left {
+  background: pink;
+}
+.span-right {
+  background: lightblue;
+}
+.span-operator {
+  background: yellow;
+}

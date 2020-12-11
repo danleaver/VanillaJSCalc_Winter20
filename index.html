@@ -21,13 +21,21 @@
     </div>
     <div>
       Your entry:
-      <span id="leftside"></span>
-      <span id="operator"></span>
+      <span class="span-left" id="leftside"></span>
+      <span class="span-operator" id="operator"></span>
+      <span class="span-right" id="rightside"></span>
     </div>
     <div>
       <button onclick="chooseOperator('+')">+</button>  
       <button onclick="chooseOperator('-')">-</button>
       <button onclick="chooseOperator('*')">*</button>
+    </div>
+    <div>
+      <button onclick="evaluateAnswer()"> = </button>
+    </div>
+    <div>
+      Your answer:
+      <span id="answer"></span>
     </div>
   <script src="index.js"></script>
   </body>

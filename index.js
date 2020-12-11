@@ -3,12 +3,31 @@ let rightSide = ""
 let operator = ""
 
 handleClick = (num) => {
-  
-  leftSide += num
-  document.getElementById("leftside").innerHTML = leftSide
+  if (operator === "") {
+    leftSide += num
+    document.getElementById("leftside").innerHTML = leftSide
+  } else {
+    rightSide += num
+    document.getElementById("rightside").innerHTML = rightSide
+  }
 }
 
 chooseOperator = (incomingOperator) => {
   operator = incomingOperator
   document.getElementById("operator").innerHTML = operator
+}
+
+evaluateAnswer = () => {
+  let answer = ""
+  switch (operator) {
+    case "+":
+      answer = leftSide + rightSide
+      break;
+    case "-":
+      break;
+    case "*":
+      break;
+  }
+
+  document.getElementById("answer").innerHTML = answer
 }
